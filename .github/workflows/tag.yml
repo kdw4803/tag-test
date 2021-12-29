@@ -14,5 +14,4 @@ jobs:
         env:
           RELEASE_VERSION: ${{ steps.vars.outputs.tag }}
         run: |
-          echo docker image build & ECR push : xxxx.dkr.ecr.ap-northeast-2.amazonaws.com/tag-test:$RELEASE_VERSION
-          echo docker image build & ECR push : xxxx.dkr.ecr.ap-northeast-2.amazonaws.com/tag-test:${{ steps.vars.outputs.tag }}
+          echo "docker image build & ECR push : xxxx.dkr.ecr.ap-northeast-2.amazonaws.com/tag-test:$RELEASE_VERSION"
